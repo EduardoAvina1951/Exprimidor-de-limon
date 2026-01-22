@@ -3,9 +3,9 @@ from PIL import Image
 import img2pdf
 import os
 
-pdf_entrada = r"C:\Users\DiegoEduardoAviñaEnc\OneDrive - RSM MEXICO BOGARIN S.C\LALO\python\Actweek.pdf"
-pdf_salida  = r"C:\Users\DiegoEduardoAviñaEnc\OneDrive - RSM MEXICO BOGARIN S.C\LALO\python\Actweekmini2.pdf"
-poppler_path = r"C:\Users\DiegoEduardoAviñaEnc\OneDrive - RSM MEXICO BOGARIN S.C\LALO\python\poppler-24.08.0\Library\bin"
+pdf_entrada = r"C:\Users\LALO\python\Actweek.pdf"
+pdf_salida  = r"C:\Users\LALO\python\Actweekmini2.pdf"
+poppler_path = r"C:\Users\LALO\python\poppler-24.08.0\Library\bin"
 
 UMBRAL_KB = 150
 
@@ -61,5 +61,6 @@ print(f"Tamaño comprimido PDF: {size_final:.2f} KB")
 reduccion = ((size_original - size_final) / size_original) * 100
 print(f"Reducción total: {reduccion:.2f}%")
 
-print("\n✅ PDF comprimido creado:", pdf_salida)
+print("\n PDF comprimido creado:", pdf_salida)
+
 
